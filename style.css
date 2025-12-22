@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.site-header {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 🔴 MAIN GRID: 4 columns */
+.container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 8px;         /* small border space */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+
+/* CARD STYLE */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden; /* 👈 VERY IMPORTANT */
+  padding: 8px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* smooth animation */
+}
+.card img :hover{
+    transform: scale(1.1); /* 👈 makes image bigger */
+}
+
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+.site-footer {
+  border-top: 1px solid #ddd;
+  padding: 16px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* 📱 RESPONSIVE (VERY IMPORTANT) */
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
