@@ -35,14 +35,14 @@ body {
   padding: 8px;
 }
 .card img {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  height: auto;
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.3s ease; /* smooth animation */
 }
-.card img :hover{
-    transform: scale(1.1); /* 👈 makes image bigger */
+.card :hover{
+  transform: scale(1.01); /* 👈 makes image bigger */
 }
 
 
