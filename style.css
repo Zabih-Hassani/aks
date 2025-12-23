@@ -35,8 +35,9 @@ body {
   padding: 8px;
 }
 .card img {
-  width: 100%;
-  height: auto;
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
   border-radius: 10px;
   transition: transform 0.3s ease; /* smooth animation */
 }
